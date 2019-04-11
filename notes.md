@@ -31,3 +31,7 @@ changing the local author will allow remote repositories to read your commit aut
 `git branch <branch name>` will create a new branch
 `git checkout <branch name>` will checkout a branch
 `git checkout -b <branch name>` will create and checkout the new branch at the same time
+if we try to checkout a branch that has a different commit log than the one we are currently on, and we have some files in our working directory, we either need to commit those files or stash the files
+`git stash` will stash the files in our branch before we checkout to a different change
+`git stash apply` will get the last stash changes and put them into our working directory again
+`git stash list` will show all our stashes
